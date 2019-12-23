@@ -1,0 +1,35 @@
+function main(){
+   goDiagonal();
+   goMarjvniv();
+   turnRight();
+   goShvashi();
+
+}
+
+function goDiagonal(){
+   putBeeper();
+   while(leftIsClear()){
+      move();
+      turnLeft();
+      move();
+      putBeeper();
+      turnRight();
+   }
+}
+function goMarjvniv(){
+   turnRight();
+   while(frontIsClear()){
+      move();
+   }
+}
+
+function goShvashi(){
+   while(noBeepersPresent()){
+      move();
+      turnRight();      
+      move();
+      turnLeft();
+   }
+   putBeeper();
+}
+
