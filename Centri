@@ -1,0 +1,19 @@
+function main(){
+   atenisCentri();
+}
+
+function atenisCentri(){
+   while(leftIsClear()){
+      move();
+      turnLeft();
+      repeat(2){
+      move();
+               }
+      turnRight();
+   }
+   turnRight();
+   while(frontIsClear()){
+      move();
+   }
+   putBeeper();
+}
